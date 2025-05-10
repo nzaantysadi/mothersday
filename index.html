@@ -3,22 +3,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Happy Mother's Day</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <button id="flyBtn">Send My Love</button>
-  <div id="scene">
-    <img src="plane.png" id="plane" />
-    <div id="letter">
-      <img src="nzaanty.jpg" alt="Nzaanty" />
-      <p>Happy Mother's Day, Mommy! You're the best, and you’ll be the best mother to our kids (you already are to me!)</p>
+  <audio autoplay loop>
+    <source src="assets/birds-of-a-feather.mp3" type="audio/mp3" />
+  </audio>
+  <div class="sky">
+    <div class="plane-container">
+      <img src="assets/plane.png" class="plane" />
+      <div class="rope"></div>
+      <div class="swing">
+        <img src="assets/nzaanty.jpg" alt="Nzaanty" class="photo" />
+        <div class="message">Happy Mother's Day, Mommy! You're already the best mommy to me!</div>
+      </div>
     </div>
-    <div class="cloud cloud1"></div>
-    <div class="cloud cloud2"></div>
   </div>
-  <audio src="birds-of-a-feather.mp3" autoplay loop></audio>
   <script src="script.js"></script>
 </body>
 </html>
