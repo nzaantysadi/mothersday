@@ -1,0 +1,77 @@
+
+body {
+  margin: 0;
+  background: #add8e6;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+#flyBtn {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #ffffffcc;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+#scene {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+}
+#plane {
+  position: absolute;
+  top: 40%;
+  left: -200px;
+  width: 200px;
+  transition: all 4s ease-in-out;
+}
+#letter {
+  position: absolute;
+  top: 55%;
+  left: -300px;
+  width: 150px;
+  animation: swing 2s infinite ease-in-out;
+}
+#letter img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+#letter p {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+@keyframes swing {
+  0%, 100% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+}
+.cloud {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: float 60s linear infinite;
+}
+.cloud1 {
+  width: 100px;
+  height: 60px;
+  top: 10%;
+  left: -150px;
+  animation-delay: 0s;
+}
+.cloud2 {
+  width: 120px;
+  height: 70px;
+  top: 20%;
+  left: -200px;
+  animation-delay: 10s;
+}
+@keyframes float {
+  0% { left: -200px; }
+  100% { left: 110%; }
+}
